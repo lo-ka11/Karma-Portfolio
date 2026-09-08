@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karma Lothritsang — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="route-rail" id="routeRail">
+  <div class="track"></div>
+  <div class="fill" id="railFill"></div>
+</div>
+
+<header>
+  <nav class="wrap">
+    <div class="logo"><span class="dot"></span>Karma Lothritsang</div>
+    <div class="navlinks">
+      <a href="#about">Über mich</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projekte</a>
+      <a href="#journey">Werdegang</a>
+    </div>
+    <a href="#contact" class="nav-cta">Kontakt</a>
+    <button class="menu-btn">≡</button>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Lernender Informatiker · 3. Lehrjahr</div>
+      <h1>Hoi, ich bin<br>Karma <em>Lothritsang</em></h1>
+      <div class="cycler"><span id="typed"></span></div>
+      <p class="pitch">Ich lerne Informatik mit Fokus auf Plattformentwicklung. Am liebsten dort, wo Systeme, Netzwerke und Automatisierung zusammenkommen. Neugierig, strukturiert und immer bereit für Neues.</p>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary">Meine Projekte →</a>
+        <a href="#contact" class="btn btn-ghost">Kontakt aufnehmen</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blob-photo">
+        <div class="shape"></div>
+        <img src="assets/images/profil.jpg" alt="Karma Lothritsang">
+      </div>
+      <div class="sticker s1"><span class="sw" style="background:var(--mint)"></span>offen für Neues</div>
+      <div class="sticker s2"><span class="sw" style="background:var(--violet)"></span>Sport & Trainieren</div>
+      <div class="sticker s3"><span class="sw" style="background:var(--coral)"></span>DE · TI · EN</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-text reveal">
+      <div class="eyebrow">Über mich</div>
+      <h2 style="font-size:34px;margin-bottom:22px;">Vom Interesse zum Beruf</h2>
+      <p>Schon als Kind faszinierten mich <strong>Computer und die Systeme dahinter</strong>, heute mache ich daraus meine Lehre. Ich arbeite zuverlässig, strukturiert und selbstständig, mit einer raschen Auffassungsgabe für Neues.</p>
+      <p>Am meisten reizt mich alles rund um <strong>Cloud, Netzwerke und Automatisierung</strong>. Von Infrastruktur bis Monitoring und Fehleranalyse. Ich sammle bewusst breites Wissen, um am Ende mit klarem Fokus in diese Richtung weiterzugehen.</p>
+      <p>Neben der Informatik bin ich <strong>tibetischer und deutscher Muttersprache</strong> und schätze auch ausserhalb der Arbeit Struktur, Disziplin und stetige Verbesserung.</p>
+    </div>
+    <div class="id-card reveal">
+      <div class="id-card-inner">
+        <div class="id-head">
+          <div>
+            <div class="name">Karma Lothritsang</div>
+            <div class="role">Informatiker EFZ — Plattformentwicklung</div>
+          </div>
+          <div class="stamp">3.<br>LEHR-<br>JAHR</div>
+        </div>
+        <div class="id-row"><span class="k">Schule</span><span class="v">TBZ Zürich</span></div>
+        <div class="id-row"><span class="k">Standort</span><span class="v">Hirzel, ZH</span></div>
+        <div class="id-row"><span class="k">Sprachen</span><span class="v">Tibetisch, Deutsch</span></div>
+        <div class="id-row"><span class="k">Fremdsprachen</span><span class="v">Englisch, Französisch</span></div>
+        <div class="id-row"><span class="k">Hobbies</span><span class="v">Sport, Trainieren</span></div>
+        <div class="id-tags">
+          <span>Cloud</span><span>Netzwerke</span><span>Automatisierung</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Skills</div>
+      <h2>Mein Werkzeugkasten</h2>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-card g-coral">
+        <div class="skill-icon">☁️</div>
+        <h3>Platform & Cloud</h3>
+        <div class="chip-row">
+          <span>Docker</span><span>Kubernetes</span><span>IP-Netzwerke</span><span>Cloud-Grundlagen</span><span>Monitoring</span>
+        </div>
+      </div>
+      <div class="skill-card g-sun">
+        <div class="skill-icon">⚡</div>
+        <h3>Automatisierung</h3>
+        <div class="chip-row">
+          <span>PowerShell</span><span>Power Automate</span><span>Power Apps</span><span>UiPath</span>
+        </div>
+      </div>
+      <div class="skill-card g-mint">
+        <div class="skill-icon">🛠️</div>
+        <h3>Support & Betrieb</h3>
+        <div class="chip-row">
+          <span>Windows</span><span>Hardware/Software</span><span>Ticketing</span><span>Change Management</span>
+        </div>
+      </div>
+      <div class="skill-card g-violet">
+        <div class="skill-icon">💬</div>
+        <h3>Sprachen</h3>
+        <div class="chip-row">
+          <span>Deutsch</span><span>Tibetisch</span><span>Englisch</span><span>Französisch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Projekte</div>
+      <h2>Meine Stationen bisher</h2>
+    </div>
+    <div class="proj-grid">
+      <div class="postcard p1">
+        <div class="tape"></div>
+        <div class="pc-top">
+          <div class="pc-num">01</div>
+          <div><div class="pc-title">IT-Support NexCC</div><div class="pc-sub">Support & Automatisierung</div></div>
+        </div>
+        <p class="desc">Technischer Support für Lernende und Mitarbeitende, Pflege einer Knowledge-Database sowie automatisierte Abläufe mit Power Automate & Power Apps. Mitarbeit an einem KI-Chatbot für den Support (SwisscomGPT).</p>
+        <div class="pc-tags"><span>Power Automate</span><span>Power Apps</span><span>KI-Chatbot</span></div>
+      </div>
+      <div class="postcard p2">
+        <div class="tape"></div>
+        <div class="pc-top">
+          <div class="pc-num">02</div>
+          <div><div class="pc-title">Call & Chat</div><div class="pc-sub">Kundenkommunikation</div></div>
+        </div>
+        <p class="desc">Kundenkommunikation im B2B Team für KMU Kunden verbessert. Bearbeitung von Inbound- und Outbound-Anfragen per Call und Chat.</p>
+        <div class="pc-tags"><span>Inbound</span><span>Outbound</span><span>Kundenservice</span></div>
+      </div>
+      <div class="postcard p3">
+        <div class="tape"></div>
+        <div class="pc-top">
+          <div class="pc-num">03</div>
+          <div><div class="pc-title">Automation Team</div><div class="pc-sub">Prozessautomatisierung</div></div>
+        </div>
+        <p class="desc">Grundlagen von UiPath kennengelernt und aktiv bei einem Automatisierungsprojekt mitgearbeitet — von der Prozessanalyse bis zur automatisierten Umsetzung.</p>
+        <div class="pc-tags"><span>UiPath</span><span>RPA</span><span>Workflows</span></div>
+      </div>
+      <div class="postcard p4">
+        <div class="tape"></div>
+        <div class="pc-top">
+          <div class="pc-num">04</div>
+          <div><div class="pc-title">ICT System Manager</div><div class="pc-sub">Change Management</div></div>
+        </div>
+        <p class="desc">Einblick in die ICT-Systeme und verschiedenen Abteilungen der Swisscom. Mitarbeit im Change-Management-Team bei der Bearbeitung von Störungsfällen.</p>
+        <div class="pc-tags"><span>Change Management</span><span>Störungsfälle</span><span>ICT-Systeme</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY / EDUCATION ================= -->
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Werdegang</div>
+      <h2>Ausbildung & Interessen</h2>
+    </div>
+    <div class="journey-wrap">
+      <div class="reveal">
+        <ul class="journey-list">
+          <li><div class="bullet" style="background:var(--coral-soft);">🎓</div><div class="txt"><strong>Lehre</strong><span>Informatiker/in EFZ — Plattformentwicklung, 3. Lehrjahr</span></div></li>
+          <li><div class="bullet" style="background:var(--sun-soft);">🏫</div><div class="txt"><strong>Berufsschule</strong><span>TBZ Zürich (Schultag: Montag)</span></div></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <ul class="journey-list">
+          <li><div class="bullet" style="background:var(--coral-soft);">🥊</div><div class="txt"><strong>Sport</strong></div></li>
+          <li><div class="bullet" style="background:var(--violet-soft);">💪</div><div class="txt"><strong>Trainieren</strong></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-panel reveal">
+      <div class="eyebrow">Kontakt</div>
+      <h2>Lust auf ein gemeinsames Projekt?</h2>
+      <p>Ich freue mich über Anfragen für Projekte im Bereich Cloud, DevOps, Netzwerktechnik und Plattformentwicklung.</p>
+      <div class="contact-links">
+        <a href="mailto:karma.lothritsang@swisscom.com" class="btn btn-primary">✉ E-Mail schreiben</a>
+        <a href="tel:+41795683685" class="btn btn-ghost">📞 079 568 36 85</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Karma Lothritsang</div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
