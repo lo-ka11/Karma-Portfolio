@@ -1,0 +1,27 @@
+# Name der Pipeline, wird im "Actions"-Tab auf GitHub angezeigt
+name: Check Website
+
+# WANN soll die Pipeline laufen?
+on:
+  push:
+    branches: [ main ]   # bei jedem Push auf den main-Branch
+
+# WAS soll gemacht werden?
+jobs:
+  validate-html:                  # Name des "Jobs" (Aufgabenblocks)
+    runs-on: ubuntu-latest        # Die Pipeline läuft auf einem virtuellen Linux-Rechner von GitHub
+
+    steps:
+      # Schritt 1: Holt deinen Code von GitHub in die virtuelle Maschine
+      - name: Code herunterladen
+        uses: actions/checkout@v4
+
+      # Schritt 2: Installiert Node.js damit wir ein Prüf-Tool nutzen können
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Schritt 3: Das eigentliche Werkzeug, das deine HTML-Datei auf Fehler prüft
+      - name: HTML validieren
+        run: npx html-validate index.html
