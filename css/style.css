@@ -279,3 +279,13 @@
   @media (prefers-reduced-motion: reduce){
     *{animation:none !important;transition:none !important;}
   }
+
+  /* ---------- VIDEO ---------- */
+.video-frame{
+  max-width:860px;margin:0 auto;
+  background:var(--paper);border:1px solid var(--border);border-radius:26px;padding:8px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.35);
+}
+.video-frame video{
+  width:100%;display:block;border-radius:20px;background:#000;
+}
